@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - All Orders</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: lightcyan;
+    }
+    .order-card {
+      background: wheat;
+      border: 1px solid #c5c5c5;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .order-card h5 {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .main-content {
+      padding: 80px 20px 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand fw-bold fs-4 text-warning" href="#">Fusion Fiesta - Admin</a>
+    <div class="ms-auto d-flex align-items-center">
+      <a href="admin.html" class="nav-link text-white me-3">Dashboard</a>
+      <button class="btn btn-outline-light btn-sm" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container main-content">
+    <h3 class="mb-4">📋 All Orders</h3>
+    <div id="allOrders"></div>
+  </div>
+
+  <footer>
+    © 2025 Fusion Fiesta | Admin Panel
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html";
+    }
+
+    window.onload = function () {
+      const container = document.getElementById("allOrders");
+      let foundOrders = false;
+
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+
+        if (key.startsWith("orderHistory_")) {
+          const username = key.replace("orderHistory_", "");
+          const orders = JSON.parse(localStorage.getItem(key)) || [];
+
+          if (orders.length > 0) {
+            foundOrders = true;
+
+            const userHeader = document.createElement("h5");
+            userHeader.textContent = `👤 Orders by: ${username}`;
+            userHeader.classList.add("text-primary", "mt-4");
+            container.appendChild(userHeader);
+
+            orders.reverse().forEach(order => {
+              const div = document.createElement("div");
+              div.className = "order-card";
+              div.innerHTML = `
+                <h6>📅 Order on ${order.date}</h6>
+                <p><strong>Name:</strong> ${order.name}</p>
+                <p><strong>Address:</strong> ${order.address}</p>
+                <p><strong>Phone:</strong> ${order.phone}</p>
+                <p><strong>Payment:</strong> ${order.method.toUpperCase()}</p>
+                <p><strong>Total:</strong> ₹${order.total}</p>
+                <strong>🧾 Items:</strong>
+                <ul>
+                  ${order.items.map(item => `<li>${item.name} × ${item.quantity} = ₹${item.price * item.quantity}</li>`).join("")}
+                </ul>
+              `;
+              container.appendChild(div);
+            });
+          }
+        }
+      }
+
+      if (!foundOrders) {
+        container.innerHTML = "<div class='alert alert-info'>No orders found from any user.</div>";
+      }
+    };
+  </script>
+</body>
+</html>
