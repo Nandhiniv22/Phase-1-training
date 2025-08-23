@@ -1,0 +1,6 @@
+@Day14MiniProj_HostAddress = http://localhost:5274
+
+GET {{Day14MiniProj_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
