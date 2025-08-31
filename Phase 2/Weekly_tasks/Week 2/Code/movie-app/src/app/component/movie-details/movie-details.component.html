@@ -1,0 +1,9 @@
+<div class="container text-center mt-4" *ngIf="movie">
+  <h1>Audience Details</h1>
+  <p><b>Name:</b> {{ movie.name }}</p>
+  <p><b>Gender:</b> {{ movie.gender }}</p>
+  <p><b>Age:</b> {{ movie.age }}</p>
+  <p><b>Date of Birth:</b> {{ movie.dob }}</p>
+
+  <button class="btn btn-primary" routerLink="/list">Go Back</button>
+</div>

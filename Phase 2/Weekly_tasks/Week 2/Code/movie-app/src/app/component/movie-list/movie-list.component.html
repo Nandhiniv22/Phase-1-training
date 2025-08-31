@@ -1,0 +1,40 @@
+<div class="container mt-4">
+  <h2 class="text-center">Audience List</h2>
+
+  <div class="d-flex justify-content-center gap-3 my-3">
+    <button class="btn btn-outline-primary" (click)="filterMovies('')">All</button>
+    <button class="btn btn-outline-primary" (click)="filterMovies('male')">Male</button>
+    <button class="btn btn-outline-primary" (click)="filterMovies('female')">Female</button>
+  </div>
+
+  <p>Total Audience: {{ movies.length }}</p>
+  <p>Male Count: {{ maleCount }}</p>
+  <p>Female Count: {{ femaleCount }}</p>
+  <p>Average Age: {{ averageAge }}</p>
+
+  <table class="table table-bordered mt-3" border="2">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>DOB</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of movies">
+        <td>{{ m.name }}</td>
+        <td>{{ m.gender }}</td>
+        <td>{{ m.age }}</td>
+        <td>{{ m.dob }}</td>
+        <td>
+          <button class="btn btn-sm btn-info" (click)="viewDetails(m.id)">Details</button>&nbsp;
+          <button class="btn btn-sm btn-danger" (click)="deleteMovie(m.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-success mt-3" routerLink="/form">Book Ticket</button>
+</div>

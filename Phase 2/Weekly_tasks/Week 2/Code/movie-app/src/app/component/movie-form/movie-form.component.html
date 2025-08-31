@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <h2 class="text-center">Enter the details to book tickets</h2>
+
+  <form (ngSubmit)="onSubmit()" #movieForm="ngForm">
+    <div class="form-group mb-3">
+      <label>Name</label>
+      <input type="text" class="form-control" required minlength="5" maxlength="20" [(ngModel)]="movie.name" name="name" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Gender</label>
+      <select class="form-control" [(ngModel)]="movie.gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Age</label>
+      <input type="number" class="form-control" [(ngModel)]="movie.age" name="age" required min="5" max="60" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Date of Birth</label>
+      <input type="date" class="form-control" [(ngModel)]="movie.dob" name="dob" required />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+  </form>
+</div>
