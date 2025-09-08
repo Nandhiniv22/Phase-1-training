@@ -1,0 +1,61 @@
+<div class="container mt-4">
+
+  <!-- Unapproved Organizers -->
+  <h2>Unapproved Organizers</h2>
+  <table class="table table-striped" *ngIf="unapprovedOrganizers.length > 0; else noUnapprovedTpl">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let organizer of unapprovedOrganizers">
+        <td>{{ organizer.name }}</td>
+        <td>{{ organizer.email }}</td>
+        <td><span class="badge bg-warning">Pending</span></td>
+        <td>
+          <button class="btn btn-sm btn-success" (click)="approve(organizer.userId)">
+            Approve
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #noUnapprovedTpl>
+    <p class="text-muted">No unapproved organizers.</p>
+  </ng-template>
+
+  <hr />
+
+  <!-- Approved Organizers -->
+  <h2>Approved Organizers</h2>
+  <table class="table table-striped" *ngIf="approvedOrganizers.length > 0; else noApprovedTpl">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let organizer of approvedOrganizers">
+        <td>{{ organizer.name }}</td>
+        <td>{{ organizer.email }}</td>
+        <td><span class="badge bg-success">Approved</span></td>
+        <td>
+          <button class="btn btn-sm btn-danger" (click)="remove(organizer.userId)">
+            Remove
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #noApprovedTpl>
+    <p class="text-muted">No approved organizers.</p>
+  </ng-template>
+
+</div>

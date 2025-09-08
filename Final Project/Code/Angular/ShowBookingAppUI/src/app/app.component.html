@@ -1,0 +1,9 @@
+<ng-container *ngIf="!isAuthPage()">
+  <!-- Role-based navbar -->
+  <app-landing-navbar *ngIf="isLanding()"></app-landing-navbar>
+  <app-user-navbar *ngIf="isUser()"></app-user-navbar>
+  <app-organizer-navbar *ngIf="isOrganizer()"></app-organizer-navbar>
+  <app-admin-navbar *ngIf="isAdmin()"></app-admin-navbar>
+</ng-container>
+
+<router-outlet></router-outlet>

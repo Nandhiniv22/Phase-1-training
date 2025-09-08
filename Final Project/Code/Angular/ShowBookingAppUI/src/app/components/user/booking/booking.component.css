@@ -1,0 +1,108 @@
+/* Screen at the top */
+.screen {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 5px #999;
+}
+
+/* Seating container */
+.seating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Each row */
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+/* Row label on left */
+.row-label {
+  width: 20px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Seats */
+.seat-row button {
+  width: 35px;
+  height: 35px;
+  margin: 2px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Seat states */
+.available {
+  background-color: #28a745; /* green */
+}
+
+.selected {
+  background-color: #007bff; /* blue */
+}
+
+.booked {
+  background-color: #6c757d; /* gray */
+  cursor: not-allowed;
+}
+
+/* Color by type if needed */
+.seat-row button.Premium.available {
+  background-color: #dc3545; /* red */
+}
+.seat-row button.Gold.available {
+  background-color: #fd7e14; /* orange */
+}
+.seat-row button.Regular.available {
+  background-color: #28a745; /* green */
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.legend span {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.legend button {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  cursor: default;
+}
+
+/* Booking summary */
+.summary {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Payment section */
+.payment-section {
+  text-align: center;
+  margin-top: 30px;
+}
+.payment-section iframe {
+  border: 2px solid #333;
+  border-radius: 5px;
+}

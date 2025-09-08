@@ -1,0 +1,30 @@
+.booking-history-container {
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.badge-pending { color: orange; font-weight: bold; }
+.badge-paid { color: green; font-weight: bold; }
+.badge-cancelled { color: red; font-weight: bold; }
+
+.loading-text, .error-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+  color: #555;
+}

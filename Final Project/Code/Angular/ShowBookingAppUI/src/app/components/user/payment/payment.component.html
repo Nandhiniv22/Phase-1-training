@@ -1,0 +1,38 @@
+<div class="payment-container" *ngIf="!loading && paymentDetails; else loadingTemplate">
+  <div class="card">
+    <h2>Booking & Payment Details</h2>
+
+    <p><strong>Booking ID:</strong> {{ paymentDetails.bookingId }}</p>
+    <p><strong>Movie:</strong> {{ paymentDetails.movieTitle }}</p>
+    <p><strong>Theatre:</strong> {{ paymentDetails.theatreName }}</p>
+    <p><strong>Seats:</strong> {{ paymentDetails.seats.join(', ') }}</p>
+    <p><strong>Booking Time:</strong> {{ paymentDetails.bookingTime | date:'medium' }}</p>
+
+    <hr>
+
+    <p><strong>Payment ID:</strong> {{ paymentDetails.paymentId || 'Not Created' }}</p>
+    <p><strong>Amount:</strong> ₹{{ paymentDetails.amount }}</p>
+    <p>
+      <strong>Status:</strong>
+      <span [ngClass]="{
+        'badge-pending': paymentDetails.paymentStatus === 0,
+        'badge-paid': paymentDetails.paymentStatus === 1,
+        'badge-cancelled': paymentDetails.paymentStatus === 2
+      }">
+        {{ getPaymentStatusText(paymentDetails.paymentStatus) }}
+      </span>
+    </p>
+
+    <div class="actions">
+      <button *ngIf="!paymentDetails.paymentId" (click)="initiatePayment()">Initiate Payment</button>
+      <button *ngIf="paymentDetails.paymentStatus === 0" (click)="updatePaymentStatus('Paid')">Mark as Paid</button>
+      <button *ngIf="paymentDetails.paymentStatus === 0" (click)="updatePaymentStatus('Cancelled')">Cancel Payment</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    <p>Loading payment details...</p>
+  </div>
+</ng-template>

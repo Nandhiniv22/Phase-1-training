@@ -1,0 +1,85 @@
+<div class="header">
+  <div class="container header-content">
+    <div class="header-text">
+      <h1>🎬 Organizer Dashboard</h1>
+      <p>Manage theatres, movies & bookings seamlessly</p>
+    </div>
+    <a routerLink="/organizer/add-theatre" class="btn-primary">+ Add Theatre</a>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Filters -->
+  <div class="filters">
+    <input
+      type="text"
+      placeholder="🔍 Search by theatre name"
+      [(ngModel)]="searchText"
+      class="search-input"
+    />
+    <select [(ngModel)]="selectedLocation" class="filter-select">
+      <option value="">All Locations</option>
+      <option *ngFor="let t of theatres" [value]="t.location">
+        {{ t.location }}
+      </option>
+    </select>
+  </div>
+
+  <!-- Theatre List -->
+  <h2 class="section-title">My Theatres</h2>
+  <div class="theatre-grid">
+    <div *ngFor="let theatre of filteredTheatres()" class="theatre-card">
+      <div class="theatre-header">
+        <h3>{{ theatre.name }}</h3>
+        <span class="location">{{ theatre.location }}</span>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button class="btn-secondary" (click)="loadMovies(theatre.theatreId)">
+  {{ selectedTheatreId === theatre.theatreId ? 'Hide Movies' : 'Show Movies' }}
+</button>
+        <a [routerLink]="['/organizer/theatre', theatre.theatreId, 'add-movie']"
+           class="btn-primary">
+          + Add Movie
+        </a>
+      </div>
+
+      <!-- Movies List -->
+      <div *ngIf="selectedTheatreId === theatre.theatreId && moviesByTheatre[theatre.theatreId]" class="movies-list">
+  <div class="table-wrapper">
+    <table class="movies-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Language</th>
+          <th>Description</th>
+          <th>Show Date</th>
+          <th>Show Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of moviesByTheatre[theatre.theatreId]">
+          <td class="title-col">{{ movie.title }}</td>
+          <td class="lang-col">{{ movie.language }}</td>
+
+          <!-- truncated description with click to open full modal -->
+          <td class="description-col">{{ movie.description }}</td>
+
+          <td class="date-col">{{ movie.showDate | date:'mediumDate' }}</td>
+          <td class="time-col">{{ movie.showTime }}</td>
+          <td class="actions-col">
+            <button class="btn-danger" (click)="deleteMovie(movie.movieId, theatre.theatreId)">Delete</button>
+            <!-- <button class="btn-secondary" (click)="editMovie(movie)">Edit</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  <div *ngIf="filteredTheatres().length === 0" class="empty-state">
+    <p>No theatres found. Try adjusting your filters or add one.</p>
+  </div>
+</div>

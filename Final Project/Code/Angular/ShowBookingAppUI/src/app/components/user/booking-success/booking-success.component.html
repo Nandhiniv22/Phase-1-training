@@ -1,0 +1,34 @@
+<div class="booking-success-container" *ngIf="!loading; else loadingTemplate">
+  <div *ngIf="bookingDetails; else errorTemplate" class="card">
+    <h2>Booking Confirmed!</h2>
+
+    <p><strong>Booking ID:</strong> {{ bookingDetails.bookingId }}</p>
+    <p><strong>Movie:</strong> {{ bookingDetails.movieTitle }}</p>
+    <p><strong>Theatre:</strong> {{ bookingDetails.theatreName }}</p>
+    <p><strong>Seats:</strong> {{ bookingDetails.seats.join(', ') }}</p>
+    <p><strong>Booking Time:</strong> {{ bookingDetails.bookingTime | date:'medium' }}</p>
+
+    <hr>
+
+    <p><strong>Payment ID:</strong> {{ bookingDetails.paymentId }}</p>
+    <p><strong>Amount Paid:</strong> ₹{{ bookingDetails.amount }}</p>
+    <p>
+      <strong>Payment Status:</strong>
+      <span [ngClass]="{
+        'badge-pending': bookingDetails.paymentStatus === 0,
+        'badge-paid': bookingDetails.paymentStatus === 1,
+        'badge-cancelled': bookingDetails.paymentStatus === 2
+      }">
+        {{ getPaymentStatusText(bookingDetails.paymentStatus) }}
+      </span>
+    </p>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <p class="loading-text">Loading booking details...</p>
+</ng-template>
+
+<ng-template #errorTemplate>
+  <p class="error-text">{{ errorMessage }}</p>
+</ng-template>

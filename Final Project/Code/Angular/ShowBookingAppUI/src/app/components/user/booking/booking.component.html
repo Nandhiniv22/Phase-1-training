@@ -1,0 +1,38 @@
+<div *ngIf="loading">Loading seats...</div>
+<div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+
+<!-- Cinema Screen -->
+<div class="screen">SCREEN</div>
+
+<!-- Seat Layout -->
+<div class="seating">
+  <div *ngFor="let row of rows" class="seat-row">
+    <span class="row-label">{{ row }}</span>
+    <button *ngFor="let seat of getSeatsByRow(row)"
+            [ngClass]="seat.status"
+            (click)="toggleSeat(seat)">
+      {{ seat.number }}
+    </button>
+  </div>
+</div>
+
+<!-- Legend -->
+<div class="legend">
+  <span><button class="available"></button> Available</span>
+  <span><button class="selected"></button> Selected</span>
+  <span><button class="booked"></button> Booked</span>
+</div>
+
+<!-- Booking Summary -->
+<div class="summary">
+  <p>Selected Seats: {{ selectedSeatLabels }}</p>
+  <p>Total: ₹{{ total }}</p>
+  <button (click)="confirmBooking()" [disabled]="isConfirmDisabled()">Confirm & Pay</button>
+</div>
+
+<!-- Payment QR -->
+<div *ngIf="paymentUrl" class="payment-section">
+  <h3>Scan QR to Pay</h3>
+  <iframe *ngIf="paymentUrl" [src]="paymentUrl" width="300" height="300"></iframe>
+  <p>Status: {{ paymentStatus }}</p>
+</div>

@@ -1,0 +1,93 @@
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.seats-container {
+  margin-top: 15px;
+}
+
+.seat-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.seat-row input {
+  flex: 1;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+.btn-secondary {
+  background-color: #757575;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #616161;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}

@@ -1,0 +1,72 @@
+.payment-container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.badge-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.badge-paid {
+  color: green;
+  font-weight: bold;
+}
+
+.badge-cancelled {
+  color: red;
+  font-weight: bold;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+.actions button:nth-child(1) { background-color: #007bff; color: #fff; }
+.actions button:nth-child(2) { background-color: #28a745; color: #fff; }
+.actions button:nth-child(3) { background-color: #dc3545; color: #fff; }
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}

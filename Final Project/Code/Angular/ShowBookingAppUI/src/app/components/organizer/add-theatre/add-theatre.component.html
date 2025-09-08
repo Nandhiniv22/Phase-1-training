@@ -1,0 +1,46 @@
+<div class="container form-page">
+  <div class="form-card">
+    <div class="form-header">
+      <h2>🎭 Add New Theatre</h2>
+      <p>Fill in the details below to create a theatre</p>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" class="form-body">
+      <!-- Theatre Name -->
+      <div class="form-group">
+        <label for="name">Theatre Name</label>
+        <input
+          id="name"
+          type="text"
+          [(ngModel)]="theatre.name"
+          name="name"
+          placeholder="Enter theatre name"
+          required
+        />
+      </div>
+
+      <!-- Location -->
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input
+          id="location"
+          type="text"
+          [(ngModel)]="theatre.location"
+          name="location"
+          placeholder="Enter theatre location"
+          required
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" class="btn-submit">✨ Save Theatre</button>
+      </div>
+
+      <!-- Message -->
+      <p class="form-message" [ngClass]="{ success: messageType==='success', error: messageType==='error' }">
+        {{ message }}
+      </p>
+    </form>
+  </div>
+</div>

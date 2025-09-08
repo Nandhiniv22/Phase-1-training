@@ -1,0 +1,30 @@
+<div class="booking-history-container" *ngIf="!loading; else loadingTemplate">
+  <div *ngIf="bookings.length > 0; else noBookings">
+    <h2>Your Booking History</h2>
+    <div *ngFor="let booking of bookings" class="card">
+      <p><strong>Booking ID:</strong> {{ booking.bookingId }}</p>
+      <p><strong>Movie:</strong> {{ booking.movieTitle }}</p>
+      <p><strong>Theatre:</strong> {{ booking.theatreName }}</p>
+      <p><strong>Seats:</strong> {{ booking.seats.join(', ') }}</p>
+      <p><strong>Booking Time:</strong> {{ booking.bookingTime | date:'medium' }}</p>
+      <p><strong>Payment ID:</strong> {{ booking.paymentId }}</p>
+      <p><strong>Amount Paid:</strong> ₹{{ booking.amount }}</p>
+      <p>
+        <strong>Payment Status:</strong>
+        <span [ngClass]="{
+          'badge-pending': booking.paymentStatus === 0,
+          'badge-paid': booking.paymentStatus === 1,
+          'badge-cancelled': booking.paymentStatus === 2
+        }">{{ getPaymentStatusText(booking.paymentStatus) }}</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <p class="loading-text">Loading booking history...</p>
+</ng-template>
+
+<ng-template #noBookings>
+  <p class="error-text">You have no previous bookings.</p>
+</ng-template>

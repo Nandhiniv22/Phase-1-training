@@ -1,0 +1,218 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Header */
+.header {
+  background: #1e88e5;
+  color: white;
+  padding: 25px 0;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .header-text h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  .header-text p {
+    margin: 5px 0 0;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: #ff5722;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #e64a19;
+}
+
+.btn-secondary {
+  background: #0288d1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background: #0277bd;
+}
+
+.btn-danger {
+  background: #d32f2f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-danger:hover {
+  background: #b71c1c;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.search-input, .filter-select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Theatre Cards */
+.theatre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+.theatre-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.theatre-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.location {
+  font-size: 0.9em;
+  color: #555;
+}
+.actions {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+.movies-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.movies-list th, .movies-list td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.movies-list th {
+  background: #eee;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  color: #777;
+  margin-top: 30px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+/* table basics */
+.movies-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* allows horizontal scrolling on small screens */
+  background: #fff;
+}
+
+.movies-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.movies-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #f3f3f3;
+  vertical-align: top;
+}
+
+/* column widths (adjust as you prefer) */
+.title-col { width: 18%; }
+.lang-col  { width: 8%; }
+.description-col { width: 42%; }
+.date-col  { width: 12%; }
+.time-col  { width: 10%; }
+.actions-col { width: 10%; }
+
+/* truncated multi-line ellipsis preview */
+.desc-preview {
+  max-height: 4.5em; /* ~3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+/* small "View" link */
+.view-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* overlay/modal for full description */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(16,16,16,0.45);
+  z-index: 1200;
+  padding: 1rem;
+}
+
+.overlay-panel {
+  background: #fff;
+  max-width: 680px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.overlay-panel h3 {
+  margin-top: 0;
+}
+
+.overlay-actions {
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,19 @@
+.auth-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px;
+}

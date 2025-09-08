@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <h2>All Users</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>
+          <span *ngIf="user.isBlocked" class="badge bg-danger">Blocked</span>
+          <span *ngIf="!user.isBlocked" class="badge bg-success">Active</span>
+        </td>
+        <td>
+          <button *ngIf="!user.isBlocked" class="btn btn-sm btn-warning"
+                  (click)="block(user.userId)">
+            Block
+          </button>
+          <button *ngIf="user.isBlocked" class="btn btn-sm btn-primary"
+                  (click)="unblock(user.userId)">
+            Unblock
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

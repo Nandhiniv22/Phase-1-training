@@ -1,0 +1,6 @@
+div.grid div {
+  transition: transform 0.2s ease;
+}
+div.grid div:hover {
+  transform: scale(1.1);
+}

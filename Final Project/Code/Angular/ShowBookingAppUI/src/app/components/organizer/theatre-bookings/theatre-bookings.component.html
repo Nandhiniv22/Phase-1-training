@@ -1,0 +1,34 @@
+<div class="container bookings-page">
+  <h2 class="page-title">🎟 Theatre Bookings</h2>
+
+  <div *ngIf="loading" class="loading">Loading bookings...</div>
+
+  <div *ngIf="!loading && bookings.length === 0" class="empty-state">
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="!loading && bookings.length > 0">
+    <h3 class="section-title">Bookings List</h3>
+    <ul class="booking-list">
+      <li *ngFor="let booking of bookings" class="booking-item">
+        <strong>User:</strong> {{ booking.userName }} |
+        <strong>Seats:</strong> {{ booking.seatNumbers.join(', ') }}
+      </li>
+    </ul>
+
+    <h3 class="section-title">Seat Layout</h3>
+    <div class="seat-layout">
+      <div class="seat-row" *ngFor="let row of groupedSeats">
+        <span class="row-label">{{ row.row }}</span>
+        <button
+          *ngFor="let seat of row.seats"
+          class="seat"
+          [ngClass]="{ booked: isBooked(seat.seatNumber) }"
+          disabled
+        >
+          {{ seat.seatNumber }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
