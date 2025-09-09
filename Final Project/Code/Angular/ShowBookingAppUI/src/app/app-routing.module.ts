@@ -62,6 +62,7 @@ const routes: Routes = [
       { path: 'theatre/:id/add-movie', component: AddMovieComponent },
       { path: 'theatre/:theatreId/edit-movie/:movieId', component: EditMovieComponent },
       { path: 'theatre/:id/bookings', component: TheatreBookingsComponent },
+      { path: 'edit-movie/:id', component: EditMovieComponent },
       { path: 'profile', component: ProfileComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
     ]

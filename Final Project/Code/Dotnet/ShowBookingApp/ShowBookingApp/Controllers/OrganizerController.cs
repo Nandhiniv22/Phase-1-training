@@ -38,6 +38,30 @@ namespace ShowBookingApp.Controllers
             return Ok(new { message = "Theatre added successfully!", theatreId = theatre.TheatreId });
         }
 
+        [HttpGet("movie/{movieId}")]
+        public async Task<IActionResult> GetMovieById(int movieId)
+        {
+            int organizerId = int.Parse(User.FindFirst("UserId")?.Value ?? "0");
+            var movie = await _organizerRepo.GetMovieByIdAsync(movieId);
+
+            if (movie == null) return NotFound("Movie not found");
+            if (movie.Theatre.OrganizerId != organizerId)
+                return Unauthorized("You do not own this theatre");
+
+            return Ok(new MovieDto
+            {
+                MovieId = movie.MovieId,
+                Title = movie.Title,
+                Language = movie.Language,
+                Description = movie.Description,
+                DurationMinutes = movie.DurationMinutes,
+                ScreenType = movie.ScreenType,
+                ShowDate = movie.ShowDate,
+                ShowTime = movie.ShowTime
+            });
+        }
+
+
         // ✅ Get Theatres by Organizer
         [HttpGet("my-theatres/{organizerId}")]
         public async Task<IActionResult> GetMyTheatres(int organizerId)
@@ -59,6 +83,17 @@ namespace ShowBookingApp.Controllers
             var theatre = await _organizerRepo.GetTheatreByIdAsync(theatreId);
             if (theatre == null || theatre.OrganizerId != organizerId)
                 return Unauthorized("You do not own this theatre");
+
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            if (dto.ShowDate < today)
+            {
+                return BadRequest("Show date cannot be in the past.");
+            }
+
+            if (dto.ShowDate == today && dto.ShowTime < DateTime.Now.TimeOfDay)
+            {
+                return BadRequest("Show time cannot be in the past for today.");
+            }
 
             var movie = dto.ToEntity(theatreId);
             movie.ScreenType ??= "2D";

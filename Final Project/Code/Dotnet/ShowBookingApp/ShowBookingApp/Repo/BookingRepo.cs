@@ -67,6 +67,24 @@ namespace ShowBookingApp.Repo
             await _context.SaveChangesAsync();
         }
 
+        public async Task<List<object>> GetBookingsByTheatreAsync(int theatreId)
+        {
+            return await _context.Bookings
+                .Include(b => b.Movie)
+                .Include(b => b.User)
+                .Where(b => b.Movie.TheatreId == theatreId)
+                .Select(b => new
+                {
+                    BookingId = b.BookingId,
+                    UserName = b.User != null ? b.User.Name : "N/A",
+                    MovieTitle = b.Movie != null ? b.Movie.Title : "N/A",
+                    ShowDate = b.Movie != null ? b.Movie.ShowDate.ToDateTime(TimeOnly.MinValue) : DateTime.MinValue,
+                    ShowTime = b.Movie != null ? b.Movie.ShowTime.ToString(@"hh\:mm") : "N/A",
+                    TotalPrice = b.TotalPrice,
+                })
+                .ToListAsync<object>();        }
+
+
 
     }
 }

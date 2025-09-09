@@ -1,0 +1,78 @@
+/* Sticky Navbar */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* ensures it stays above content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #3944a7, #292827);
+  border-radius: 0 0 15px 15px; /* rounded bottom corners only */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s;
+}
+
+/* Brand styling */
+.custom-navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.custom-navbar .navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar menu */
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links styling */
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+/* Logout button */
+.logout-btn {
+  background: #fff;
+  color: #ff6f61;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ff6f61;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Icon spacing */
+.nav-link i, .logout-btn i {
+  font-size: 1rem;
+}

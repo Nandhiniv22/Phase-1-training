@@ -1,1 +1,58 @@
-<p>edit-movie works!</p>
+<div class="container mt-5" style="max-width: 600px;">
+  <div class="card shadow">
+    <div class="card-header bg-warning text-dark">
+      <h4><i class="bi bi-pencil-square"></i> Edit Movie</h4>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="mb-3">
+          <label>Title</label>
+          <input class="form-control" [(ngModel)]="movie.title" name="title" />
+        </div>
+
+        <div class="mb-3">
+          <label>Language</label>
+          <select class="form-select" [(ngModel)]="movie.language" name="language">
+            <option value="Tamil">Tamil</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label>Description</label>
+          <textarea class="form-control" [(ngModel)]="movie.description" name="description"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label>Duration (minutes)</label>
+          <input type="number" class="form-control" [(ngModel)]="movie.durationMinutes" name="durationMinutes" />
+        </div>
+
+        <div class="mb-3">
+          <label>Screen Type</label>
+          <select class="form-select" [(ngModel)]="movie.screenType" name="screenType">
+            <option value="2D">2D</option>
+            <option value="3D">3D</option>
+            <option value="IMAX">IMAX</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label>Show Date</label>
+          <input type="date" class="form-control" [(ngModel)]="movie.showDate" name="showDate" [min]="today" />
+        </div>
+
+        <div class="mb-3">
+          <label>Show Time</label>
+          <input type="time" class="form-control" [(ngModel)]="movie.showTime" name="showTime" />
+        </div>
+
+        <button type="button" class="btn btn-warning w-100" (click)="updateMovie()">
+          <i class="bi bi-check-circle"></i> Update Movie
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

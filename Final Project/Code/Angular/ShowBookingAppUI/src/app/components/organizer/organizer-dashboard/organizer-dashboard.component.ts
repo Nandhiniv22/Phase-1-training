@@ -17,6 +17,9 @@ export class OrganizerDashboardComponent implements OnInit {
 
   selectedTheatreId: number | null = null;
 
+  bookingsByTheatre: { [key: number]: any[] } = {};
+  selectedBookingsTheatreId: number | null = null;
+
   constructor(private organizerService: OrganizerService, private router : Router) {}
 
   ngOnInit(): void {
@@ -73,11 +76,25 @@ deleteMovie(movieId: number, theatreId: number) {
     });
   }
 }
-editMovie(movie: any) {
-  // navigate with theatreId and movieId
-  this.router.navigate([
-    `/organizer/theatre/${movie.theatreId}/edit-movie/${movie.movieId}`
-  ]);
+
+editMovie(movieId: number) {
+  this.router.navigate(['/organizer/edit-movie', movieId]);
 }
+
+loadBookings(theatreId: number) {
+    if (this.selectedBookingsTheatreId === theatreId) {
+      this.selectedBookingsTheatreId = null;
+    } else {
+      this.organizerService.getBookingsByTheatre(theatreId).subscribe({
+        next: (data) => {
+          this.bookingsByTheatre[theatreId] = data;
+          this.selectedBookingsTheatreId = theatreId;
+        },
+        error: () => {
+          console.error('Failed to load bookings');
+        }
+      });
+    }
+  }
 
 }

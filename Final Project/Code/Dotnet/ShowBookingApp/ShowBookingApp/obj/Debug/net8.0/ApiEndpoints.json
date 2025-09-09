@@ -214,6 +214,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ShowBookingApp.Controllers.BookingController",
+    "Method": "GetBookingsByTheatre",
+    "RelativePath": "api/booking/theatre/{theatreId}/bookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "theatreId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShowBookingApp.Controllers.OrganizerController",
+    "Method": "GetMovieById",
+    "RelativePath": "api/organizer/movie/{movieId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ShowBookingApp.Controllers.OrganizerController",
     "Method": "DeleteMovie",
     "RelativePath": "api/organizer/movie/{movieId}",

@@ -1,8 +1,11 @@
 <div class="booking-history-container" *ngIf="!loading; else loadingTemplate">
   <div *ngIf="bookings.length > 0; else noBookings">
     <h2>Your Booking History</h2>
-    <div *ngFor="let booking of bookings" class="card">
-      <p><strong>Booking ID:</strong> {{ booking.bookingId }}</p>
+    <div *ngFor="let booking of bookings" class="card booking-card">
+      <div class="card-header">
+        <span>Booking ID: {{ booking.bookingId }}</span>
+        <span class="download-icon" (click)="downloadBooking(booking)" title="Download Booking">💾</span>
+      </div>
       <p><strong>Movie:</strong> {{ booking.movieTitle }}</p>
       <p><strong>Theatre:</strong> {{ booking.theatreName }}</p>
       <p><strong>Seats:</strong> {{ booking.seats.join(', ') }}</p>

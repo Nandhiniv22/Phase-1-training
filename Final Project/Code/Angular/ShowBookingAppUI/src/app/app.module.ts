@@ -57,7 +57,7 @@ import { BookingHistoryComponent } from './components/user/booking-history/booki
     SafePipe,
     PaymentComponent,
     BookingSuccessComponent,
-    BookingHistoryComponent
+    BookingHistoryComponent,
   ],
   imports: [
     BrowserModule,

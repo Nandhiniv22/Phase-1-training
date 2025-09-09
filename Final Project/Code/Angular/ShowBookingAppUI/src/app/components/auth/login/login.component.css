@@ -1,19 +1,96 @@
-.auth-container {
-  width: 350px;
-  margin: 80px auto;
-  padding: 30px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background: #fff;
+/* Page background */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1605647540924-dc4d0d7dd52d") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* Title */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+.login-subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.brand {
+  color: #ff0050;
+  font-weight: 600;
+}
+
+/* Input styling */
+.input-group-text {
+  background: #ff0050;
+  border: none;
+  color: #fff;
 }
 
 .form-control {
-  margin-bottom: 15px;
-  height: 45px;
-  font-size: 16px;
+  border-radius: 0 10px 10px 0;
 }
 
-.btn-block {
-  width: 100%;
-  padding: 10px;
+.toggle-btn {
+  border: none;
+  background: #222;
+  color: #ffcc00;
+}
+
+/* Button */
+.login-btn {
+  background: linear-gradient(90deg, #ff0050, #ffcc00);
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 80, 0.6);
+}
+
+/* Links */
+.register-link {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.eye-toggle {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  color: #000;
+}
+
+.eye-toggle:hover {
+  background: #333;
+  color: #fff;
 }

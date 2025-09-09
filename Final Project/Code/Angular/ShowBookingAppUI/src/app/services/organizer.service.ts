@@ -49,10 +49,16 @@ deleteMovie(movieId: number): Observable<any> {
   return this.http.delete(`${this.apiUrl}/movie/${movieId}`);
 }
 
-updateMovie(movieId: number, movie: any): Observable<any> {
-  return this.http.put(`${this.apiUrl}/movie/${movieId}`, movie, {
-    headers: { 'Content-Type': 'application/json' }
-  });
+getMovieById(movieId: number): Observable<any> {
+  return this.http.get(`${this.apiUrl}/movie/${movieId}`);
 }
+
+updateMovie(movieId: number, movie: any): Observable<any> {
+  return this.http.put(`${this.apiUrl}/movie/${movieId}`, movie);
+}
+
+getBookingsByTheatre(theatreId: number): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/theatre/${theatreId}/bookings`);
+  }
   
 }

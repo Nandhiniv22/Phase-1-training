@@ -20,5 +20,6 @@ namespace ShowBookingApp.Models
         public int TheatreId { get; set; }
         public Theatre Theatre { get; set; } = null!;
         public List<Seat> Seats { get; set; } = new List<Seat>();
+        public List<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }

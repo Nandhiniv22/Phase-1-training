@@ -1,5 +1,65 @@
-<div class="container text-center mt-5">
-  <h1>Welcome Admin 👋</h1>
-  <p class="lead">Manage users, organizers, and view statistics here.</p>
-  <img src="https://www.deccanchronicle.com/h-upload/2024/05/15/1090041-gnmagcbaqaaljwp.webp" class="img-fluid" alt="Admin Banner" style="max-height: 300px;">
+<div class="container-fluid mt-4">
+
+  <!-- Welcome Section -->
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">🎬 Welcome, Admin!</h2>
+    <p class="text-muted">Manage users, organizers, movies, and view reports all in one place.</p>
+  </div>
+
+<div class="d-flex justify-content-center">
+  <img src="https://img.freepik.com/premium-vector/rows-red-cinema-theater-seats-front-transparent-background-vector_259139-1640.jpg"
+       alt="movie-image"
+       height="200"
+       width="300"
+       class="img-fluid"/>
+</div>
+  <!-- Stats Overview -->
+  <div class="row g-4 mb-4 justify-content-center text-center">
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 text-center p-3">
+        <i class="bi bi-people-fill fs-1 text-primary"></i>
+        <h5 class="mt-2">Users</h5>
+        <a routerLink="/admin/users" class="btn btn-outline-primary btn-sm">Manage</a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 text-center p-3">
+        <i class="bi bi-person-workspace fs-1 text-success"></i>
+        <h5 class="mt-2">Organizers</h5>
+        <a routerLink="/admin/organizers" class="btn btn-outline-success btn-sm">Manage</a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0 text-center p-3">
+        <i class="bi bi-bar-chart-line-fill fs-1 text-danger"></i>
+        <h5 class="mt-2">Analytics</h5>
+        <a routerLink="/admin/reports" class="btn btn-outline-danger btn-sm">View</a>
+      </div>
+    </div>
+</div>
+
+  <!-- Quick Actions -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0 p-3">
+        <h5><i class="bi bi-clock-history text-info"></i> Recent Activities</h5>
+        <ul class="list-group list-group-flush mt-2">
+          <li class="list-group-item">New user registered: <strong>John Doe</strong></li>
+          <li class="list-group-item"><strong>Organizer</strong> approved</li>
+          <li class="list-group-item"><strong>Movie </strong> added</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0 p-3">
+        <h5><i class="bi bi-gear-fill text-secondary"></i> Quick Actions</h5>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <a routerLink="/admin/users" class="btn btn-outline-primary btn-sm">Manage Users</a>
+          <a routerLink="/admin/organizers" class="btn btn-outline-success btn-sm">Manage Organizers</a>
+          <a routerLink="/admin/reports" class="btn btn-outline-danger btn-sm">View Reports</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

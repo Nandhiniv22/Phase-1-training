@@ -80,12 +80,27 @@ namespace ShowBookingApp.Repo
 
         public async Task DeleteMovieAsync(int movieId)
         {
-            var movie = await _context.Movies.FindAsync(movieId);
+            var movie = await _context.Movies
+                .Include(m => m.Seats)
+                .Include(m => m.Bookings)
+                .FirstOrDefaultAsync(m => m.MovieId == movieId);
+
             if (movie == null) return;
 
+            // Remove related seats first
+            if (movie.Seats != null && movie.Seats.Any())
+                _context.Seats.RemoveRange(movie.Seats);
+
+            // Remove related bookings
+            if (movie.Bookings != null && movie.Bookings.Any())
+                _context.Bookings.RemoveRange(movie.Bookings);
+
+            // Finally remove the movie
             _context.Movies.Remove(movie);
+
             await _context.SaveChangesAsync();
         }
+
 
         // ✅ Seats
         public async Task AddSeatsAsync(List<Seat> seats)

@@ -11,6 +11,7 @@ namespace ShowBookingApp.Repo
         Task CancelBookingAsync(Booking booking);
         Task<IEnumerable<Booking>> GetBookingsByTheatreIdAsync(int theatreId);
         Task<int> GetBookingCountForMovieAsync(int movieId);
+        Task<List<object>> GetBookingsByTheatreAsync(int theatreId);
 
     }
 }

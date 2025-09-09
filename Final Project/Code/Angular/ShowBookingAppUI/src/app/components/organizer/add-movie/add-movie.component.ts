@@ -11,6 +11,7 @@ export class AddMovieComponent implements OnInit {
   theatreId!: number;
   message: string = '';
   isSuccess: boolean = false;
+  today: string = '';
 
   movie = {
   title: '',
@@ -34,9 +35,23 @@ export class AddMovieComponent implements OnInit {
     private organizerService: OrganizerService
   ) {}
 
-  ngOnInit(): void {
-    this.theatreId = Number(this.route.snapshot.paramMap.get('id'));
+ngOnInit(): void {
+  this.theatreId = Number(this.route.snapshot.paramMap.get('id'));
+
+  const now = new Date();
+  this.today = now.toISOString().split('T')[0]; 
+}
+
+getMinTime(): string | null {
+  if (!this.movie?.showDate) return null;
+
+  if (this.movie.showDate === this.today) {
+    const now = new Date();
+    return now.toTimeString().slice(0, 5); 
   }
+
+  return null; 
+}
 
   onSubmit() {
   if (!this.movie.title || !this.movie.language || !this.movie.description || !this.movie.showDate || !this.movie.showTime) {

@@ -37,8 +37,11 @@
       <!-- Actions -->
       <div class="actions">
         <button class="btn-secondary" (click)="loadMovies(theatre.theatreId)">
-  {{ selectedTheatreId === theatre.theatreId ? 'Hide Movies' : 'Show Movies' }}
-</button>
+          {{ selectedTheatreId === theatre.theatreId ? 'Hide Movies' : 'Show Movies' }}
+        </button>
+        <button class="btn-secondary" (click)="loadBookings(theatre.theatreId)">
+          {{ selectedBookingsTheatreId === theatre.theatreId ? 'Hide Bookings' : 'Show Bookings' }}
+        </button>
         <a [routerLink]="['/organizer/theatre', theatre.theatreId, 'add-movie']"
            class="btn-primary">
           + Add Movie
@@ -69,15 +72,46 @@
 
           <td class="date-col">{{ movie.showDate | date:'mediumDate' }}</td>
           <td class="time-col">{{ movie.showTime }}</td>
-          <td class="actions-col">
-            <button class="btn-danger" (click)="deleteMovie(movie.movieId, theatre.theatreId)">Delete</button>
-            <!-- <button class="btn-secondary" (click)="editMovie(movie)">Edit</button> -->
+          <td>
+            <div class="d-flex gap-2">
+              <button class="btn btn-warning btn-sm d-flex align-items-center" (click)="editMovie(movie.movieId)">
+                <i class="bi bi-pencil-square me-1"></i> Edit
+              </button>
+              <button class="btn btn-danger btn-sm d-flex align-items-center"(click)="deleteMovie(movie.movieId, theatre.theatreId)">
+                <i class="bi bi-trash3 me-1"></i> Delete
+              </button>
+            </div>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+
+<div *ngIf="selectedBookingsTheatreId === theatre.theatreId && bookingsByTheatre[theatre.theatreId]" class="bookings-list">
+        <div class="table-wrapper">
+          <table class="bookings-table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Movie</th>
+                <th>Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let b of bookingsByTheatre[theatre.theatreId]">
+                <td>{{ b.bookingId }}</td>
+                <td>{{ b.movieTitle }}</td>
+                <td>₹{{ b.totalPrice }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <div *ngIf="filteredTheatres().length === 0" class="empty-state">
     <p>No theatres found. Try adjusting your filters or add one.</p>

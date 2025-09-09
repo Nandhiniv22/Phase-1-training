@@ -1,40 +1,84 @@
-<div class="container mt-4">
-  <h3>Add Movie</h3>
+<div class="container mt-5">
+  <div class="card shadow-lg border-0 rounded-3">
+    <div class="card-header bg-danger text-white text-center">
+      <h3 class="mb-0"><i class="bi bi-film"></i> Add New Movie</h3>
+    </div>
 
-  <!-- Movie form -->
-  <div class="form-group">
-    <input class="form-control my-2" [(ngModel)]="movie.title" placeholder="Title"/>
-    <input class="form-control my-2" [(ngModel)]="movie.language" placeholder="Language"/>
-    <textarea class="form-control my-2" [(ngModel)]="movie.description" placeholder="Description"></textarea>
-    <input class="form-control my-2" [(ngModel)]="movie.durationMinutes" type="number" placeholder="Duration in minutes"/>
-    <label>Screen Type:</label>
-  <select class="form-control my-2" [(ngModel)]="movie.screenType">
-    <option value="2D">2D</option>
-    <option value="3D">3D</option>
-    <option value="IMAX">IMAX</option>
-  </select>
-    <!-- Show Date & Time -->
-    <label>Show Date:</label>
-    <input class="form-control my-2" [(ngModel)]="movie.showDate" type="date"/>
+    <div class="card-body">
+      <!-- Title -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-card-text"></i> Title</label>
+        <input class="form-control" [(ngModel)]="movie.title" placeholder="Enter movie title" />
+      </div>
 
-    <label>Show Time:</label>
-    <input class="form-control my-2" [(ngModel)]="movie.showTime" type="time"/>
-  </div>
+      <!-- Language -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-translate"></i> Language</label>
+        <select class="form-select" [(ngModel)]="movie.language">
+          <option value="tamil">Tamil</option>
+          <option value="english">English</option>
+          <option value="telugu">Telugu</option>
+          <option value="hindi">Hindi</option>
+        </select>
+      </div>
 
-  <!-- Seat categories -->
-  <div *ngFor="let cat of seatCategories" class="form-group my-2">
-    <label>{{cat.name}} Rows:</label>
-    <input type="number" class="form-control" [(ngModel)]="cat.rows"/>
-  </div>
+      <!-- Description -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-card-text"></i> Description</label>
+        <textarea class="form-control" [(ngModel)]="movie.description" rows="3" placeholder="Short description"></textarea>
+      </div>
 
-  <!-- Submit button -->
-  <button class="btn btn-primary mt-3" (click)="onSubmit()">Add Movie & Seats</button>
+      <!-- Duration -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-clock"></i> Duration (minutes)</label>
+        <input class="form-control" [(ngModel)]="movie.durationMinutes" type="number" placeholder="e.g. 150" />
+      </div>
 
-  <!-- Success / error message -->
-  <div *ngIf="message" class="mt-3 alert" [ngClass]="{
-        'alert-success': isSuccess,
-        'alert-danger': !isSuccess
-      }">
-    {{ message }}
+      <!-- Screen Type -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-tv"></i> Screen Type</label>
+        <select class="form-select" [(ngModel)]="movie.screenType">
+          <option value="2D">2D</option>
+          <option value="3D">3D</option>
+          <option value="IMAX">IMAX</option>
+        </select>
+      </div>
+
+      <!-- Show Date & Time -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label"><i class="bi bi-calendar-date"></i> Show Date</label>
+          <input class="form-control" [(ngModel)]="movie.showDate" type="date" [min]="today" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label"><i class="bi bi-clock-history"></i> Show Time</label>
+          <input class="form-control" [(ngModel)]="movie.showTime" type="time" [min]="getMinTime()" />
+        </div>
+      </div>
+
+      <!-- Seat Categories -->
+      <div class="mb-3">
+        <label class="form-label"><i class="bi bi-grid-3x3"></i> Seat Categories</label>
+        <div *ngFor="let cat of seatCategories" class="input-group mb-2">
+          <span class="input-group-text">{{cat.name}} Rows</span>
+          <input type="number" class="form-control" [(ngModel)]="cat.rows" />
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <div class="d-grid mt-4">
+        <button class="btn btn-danger" (click)="onSubmit()">
+          <i class="bi bi-plus-circle"></i> Add Movie & Seats
+        </button>
+      </div>
+
+      <!-- Message -->
+      <div *ngIf="message" class="mt-3 alert text-center" [ngClass]="{
+          'alert-success': isSuccess,
+          'alert-danger': !isSuccess
+        }">
+        {{ message }}
+      </div>
+    </div>
   </div>
 </div>

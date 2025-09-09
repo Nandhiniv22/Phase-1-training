@@ -3,48 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\ipaymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\ipaymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\iorganizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\iorganizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297059B3-7203-4ED6-BB7A-9A6E91B84C55}|TestAPI\\TestAPI.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\testapi\\controllertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297059B3-7203-4ED6-BB7A-9A6E91B84C55}|TestAPI\\TestAPI.csproj|solutionrelative:testapi\\controllertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\dtos\\moviedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\dtos\\moviedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\itheatrerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\itheatrerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\paymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\ipaymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\ipaymentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297059B3-7203-4ED6-BB7A-9A6E91B84C55}|TestAPI\\TestAPI.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\testapi\\controllertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297059B3-7203-4ED6-BB7A-9A6E91B84C55}|TestAPI\\TestAPI.csproj|solutionrelative:testapi\\controllertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\dtos\\theatredtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\dtos\\theatredtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,14 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\ibookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|solutionrelative:showbookingapp\\repo\\bookingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F75A9D86-1C87-4A95-A0B5-35B7E8FFC01A}|ShowBookingApp\\ShowBookingApp.csproj|c:\\users\\nandhini.v\\source\\repos\\showbookingapp\\showbookingapp\\mappers\\entitytodtomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,104 +141,117 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "PaymentRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\PaymentRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\PaymentRepo.cs",
               "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\PaymentRepo.cs",
               "RelativeToolTip": "ShowBookingApp\\Repo\\PaymentRepo.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAmwHkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwEgAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T12:29:42.483Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Booking.cs",
-              "RelativeToolTip": "ShowBookingApp\\Models\\Booking.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBsAAABBAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Movie.cs",
+              "RelativeToolTip": "ShowBookingApp\\Models\\Movie.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA8wBYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T19:22:29.304Z",
+              "WhenOpened": "2025-09-09T11:30:28.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "ShowBookingApp\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAkwHcAAAAkAAAAAAAAAA==",
+              "Title": "OrganizerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\OrganizerRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\OrganizerRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\OrganizerRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\OrganizerRepo.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwFQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:31:08.427Z",
+              "WhenOpened": "2025-09-09T11:28:14.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Payment.cs",
-              "RelativeToolTip": "ShowBookingApp\\Models\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA4AAAAAAAAAA==",
+              "Title": "IOrganizerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IOrganizerRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IOrganizerRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IOrganizerRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\IOrganizerRepo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:28:58.703Z",
+              "WhenOpened": "2025-09-09T11:08:16.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ShowBookingApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAIwMUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:26:30.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IPaymentRepo.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IPaymentRepo.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IPaymentRepo.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IPaymentRepo.cs",
-              "RelativeToolTip": "ShowBookingApp\\Repo\\IPaymentRepo.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIA7wAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:29:28.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\BookingController.cs",
               "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\BookingController.cs",
               "RelativeToolTip": "ShowBookingApp\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAswGQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T12:19:16.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T14:56:35.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBookingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IBookingRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IBookingRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IBookingRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\IBookingRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:20:39.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\BookingRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\BookingRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\BookingRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\BookingRepo.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAE4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:05:03.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Models\\User.cs",
@@ -218,12 +259,63 @@
               "RelativeToolTip": "ShowBookingApp\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:44:26.007Z",
+              "WhenOpened": "2025-09-08T14:44:26.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Booking.cs",
+              "RelativeToolTip": "ShowBookingApp\\Models\\Booking.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T19:22:29.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrganizerController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\OrganizerController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\OrganizerController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\OrganizerController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\OrganizerController.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAADwv6sAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T04:31:32.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:55:53.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MovieDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\DTOs\\MovieDTOs.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\DTOs\\MovieDTOs.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\DTOs\\MovieDTOs.cs",
+              "RelativeToolTip": "ShowBookingApp\\DTOs\\MovieDTOs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T10:24:00.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Program.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Program.cs",
@@ -236,20 +328,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ShowBookingApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA5wB4AAAANAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ITheatreRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\ITheatreRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\ITheatreRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\ITheatreRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\ITheatreRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:56:35.106Z",
+              "WhenOpened": "2025-09-09T04:49:53.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
+              "Title": "IPaymentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IPaymentRepo.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IPaymentRepo.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IPaymentRepo.cs",
+              "RelativeToolTip": "ShowBookingApp\\Repo\\IPaymentRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAD4vwsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:29:28.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwGsAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T14:26:57.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T14:26:30.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "ShowBookingApp\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwDsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:31:08.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "ShowBookingApp\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Models\\Payment.cs",
+              "RelativeToolTip": "ShowBookingApp\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:28:58.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "UserRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\UserRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\UserRepo.cs",
@@ -257,12 +410,11 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\UserRepo.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAjwCYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:29:50.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T14:29:50.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "ControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\TestAPI\\ControllerTests.cs",
               "RelativeDocumentMoniker": "TestAPI\\ControllerTests.cs",
@@ -270,25 +422,11 @@
               "RelativeToolTip": "TestAPI\\ControllerTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T17:03:13.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T17:03:13.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "ShowBookingApp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAmwGoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:26:57.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "IUserRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IUserRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IUserRepo.cs",
@@ -296,12 +434,11 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\IUserRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:29:00.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T14:29:00.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "TheatreDTOs.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\DTOs\\TheatreDTOs.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\DTOs\\TheatreDTOs.cs",
@@ -309,25 +446,11 @@
               "RelativeToolTip": "ShowBookingApp\\DTOs\\TheatreDTOs.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA9wBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T15:03:08.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T15:03:08.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IBookingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IBookingRepo.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IBookingRepo.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IBookingRepo.cs",
-              "RelativeToolTip": "ShowBookingApp\\Repo\\IBookingRepo.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:20:39.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "EntityToDtoMapper.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Mappers\\EntityToDtoMapper.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Mappers\\EntityToDtoMapper.cs",
@@ -335,12 +458,11 @@
               "RelativeToolTip": "ShowBookingApp\\Mappers\\EntityToDtoMapper.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAIwEgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:12:13.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:12:13.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "BookingDTOs.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\DTOs\\BookingDTOs.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\DTOs\\BookingDTOs.cs",
@@ -348,12 +470,11 @@
               "RelativeToolTip": "ShowBookingApp\\DTOs\\BookingDTOs.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA9wBQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:11:04.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:11:04.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Context\\AppDbContext.cs",
@@ -361,12 +482,11 @@
               "RelativeToolTip": "ShowBookingApp\\Context\\AppDbContext.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAmwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:30:31.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:30:31.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "DtoToEntityMapper.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Mappers\\DtoToEntityMapper.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Mappers\\DtoToEntityMapper.cs",
@@ -374,25 +494,11 @@
               "RelativeToolTip": "ShowBookingApp\\Mappers\\DtoToEntityMapper.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:11:49.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:11:49.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BookingRepo.cs",
-              "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\BookingRepo.cs",
-              "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\BookingRepo.cs",
-              "ToolTip": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\BookingRepo.cs",
-              "RelativeToolTip": "ShowBookingApp\\Repo\\BookingRepo.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAYwD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:05:03.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "MovieRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\MovieRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\MovieRepo.cs",
@@ -400,12 +506,11 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\MovieRepo.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAkwDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:10:24.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:10:24.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "IMovieRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\IMovieRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\IMovieRepo.cs",
@@ -413,12 +518,11 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\IMovieRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:09:36.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:09:36.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "SeatRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\SeatRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\SeatRepo.cs",
@@ -426,12 +530,11 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\SeatRepo.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAmwEEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:08:17.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:08:17.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "ISeatRepo.cs",
               "DocumentMoniker": "C:\\Users\\nandhini.v\\source\\repos\\ShowBookingApp\\ShowBookingApp\\Repo\\ISeatRepo.cs",
               "RelativeDocumentMoniker": "ShowBookingApp\\Repo\\ISeatRepo.cs",
@@ -439,8 +542,7 @@
               "RelativeToolTip": "ShowBookingApp\\Repo\\ISeatRepo.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:07:14.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:07:14.46Z"
             }
           ]
         }

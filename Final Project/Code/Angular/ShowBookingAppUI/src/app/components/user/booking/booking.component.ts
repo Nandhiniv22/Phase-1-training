@@ -53,46 +53,66 @@ export class BookingComponent implements OnInit, OnDestroy {
   }
 
   private fetchSeats(movieId: number, theatreId: number) {
-    this.loading = true;
-    this.errorMsg = '';
-    const url = `http://localhost:5227/api/user/theatre/${theatreId}/seats?movieId=${movieId}`;
+  this.loading = true;
+  this.errorMsg = '';
+  const url = `http://localhost:5227/api/user/theatre/${theatreId}/seats?movieId=${movieId}`;
 
-    this.http.get<any[]>(url).subscribe({
-      next: (data) => {
-        this.processRawSeats(data ?? []);
-        this.loading = false;
-      },
-      error: (err) => {
-        console.error(err);
-        this.errorMsg = 'Could not load seats, using demo data.';
+  this.http.get<any[]>(url).subscribe({
+    next: (data) => {
+      if (!data || data.length === 0) {
+        // New movie or seats not in DB → create all seats available
         this.processRawSeats(this.demoRawSeats());
-        this.loading = false;
+      } else {
+        // Existing movie → show booked/available from DB
+        this.processRawSeats(data);
       }
-    });
-  }
+      this.loading = false;
+    },
+    error: (err) => {
+      console.error(err);
+      this.errorMsg = 'Could not load seats, using demo data.';
+      this.processRawSeats(this.demoRawSeats());
+      this.loading = false;
+    }
+  });
+}
+
 
   private processRawSeats(raw: any[]) {
-    this.rawSeats = raw; // store raw data for ID mapping
-    const parsed: Seat[] = raw.map(r => {
-      const seatNumber = r.SeatNumber ?? r.seatNumber ?? '';
-      if (!seatNumber) return null;
-      const row = seatNumber.charAt(0).toUpperCase();
-      const number = Number(seatNumber.slice(1)) || 0;
-      const price = Number(r.Price ?? r.price ?? 150);
-      const isAvailable = r.IsAvailable ?? r.isAvailable ?? true;
-      return {
+  this.rawSeats = raw; // store raw data for ID mapping
+  const seatMap = new Map<string, Seat>();
+
+  raw.forEach(r => {
+    const seatNumber = r.SeatNumber ?? r.seatNumber ?? '';
+    if (!seatNumber) return;
+
+    const row = seatNumber.charAt(0).toUpperCase();
+    const number = Number(seatNumber.slice(1)) || 0;
+    const price = Number(r.Price ?? r.price ?? 150);
+    const type = r.SeatType ?? '';
+
+    // If seat exists in DB, use its availability; otherwise default to available
+    const isAvailable = (r.IsAvailable ?? r.isAvailable) !== undefined ? Boolean(r.IsAvailable ?? r.isAvailable) : true;
+
+    if (!seatMap.has(seatNumber)) {
+      seatMap.set(seatNumber, {
         id: seatNumber,
         row,
         number,
         status: isAvailable ? 'available' : 'booked',
         price,
-        type: r.SeatType ?? ''
-      } as Seat;
-    }).filter(Boolean) as Seat[];
+        type
+      });
+    }
+  });
 
-    this.seats = parsed.sort((a, b) => a.row.localeCompare(b.row) || a.number - b.number);
-    this.rows = Array.from(new Set(this.seats.map(s => s.row)));
-  }
+  this.seats = Array.from(seatMap.values())
+    .sort((a, b) => b.row.localeCompare(a.row) || b.number - a.number);
+
+  this.rows = Array.from(new Set(this.seats.map(s => s.row)))
+    .sort((a, b) => b.localeCompare(a));
+}
+
 
   toggleSeat(seat: Seat) {
     if (seat.status === 'booked') return;
@@ -191,17 +211,41 @@ export class BookingComponent implements OnInit, OnDestroy {
 }
   // Demo fallback
   private demoRawSeats(): any[] {
-    const rows = ['A','B','C','D','E','F','G','H','I','J','K'];
-    const out: any[] = [];
-    for (let r=0; r<rows.length; r++){
-      const row = rows[r];
-      for (let n=1; n<=10; n++){
-        const seatNum = `${row}${n}`;
-        const type = (row==='A'||row==='B')?'Premium':(['C','D','E','F'].includes(row)?'Gold':'Regular');
-        const price = type==='Premium'?400:type==='Gold'?250:150;
-        out.push({ SeatNumber: seatNum, SeatType: type, Price: price, IsAvailable: true, SeatId: r*10+n });
-      }
+  const rows = ['A','B','C','D','E','F','G','H','I','J','K'];
+  const out: any[] = [];
+
+  rows.slice().reverse().forEach((row, rIdx) => {
+    let type: string;
+    let price: number;
+    let seatsPerRow: number;
+
+    if (row === 'A' || row === 'B') {
+      type = 'Premium';
+      price = 400;
+      seatsPerRow = 10;
+    } else if (['C','D','E','F'].includes(row)) {
+      type = 'Gold';
+      price = 250;
+      seatsPerRow = 20;
+    } else {
+      type = 'Regular';
+      price = 150;
+      seatsPerRow = 20;
     }
-    return out;
-  }
+
+    for (let n = seatsPerRow; n >= 1; n--) {
+      const seatNum = `${row}${n}`;
+      out.push({
+        SeatNumber: seatNum,
+        SeatType: type,
+        Price: price,
+        IsAvailable: true, // fully available for new movie
+        SeatId: rIdx * 20 + n
+      });
+    }
+  });
+
+  return out;
+}
+
 }

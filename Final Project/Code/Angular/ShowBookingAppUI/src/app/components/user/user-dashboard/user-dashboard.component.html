@@ -4,13 +4,12 @@
   <aside class="filters-sidebar">
     <h2>Search Movies</h2>
     <form (ngSubmit)="searchMovies()" class="filters-form">
-
       <input type="text" placeholder="Movie Name" [(ngModel)]="filters.movieName" name="movieName" />
       <input type="text" placeholder="Location" [(ngModel)]="filters.location" name="location" />
 
       <div class="filter-buttons">
-        <button type="submit">Search</button>
-        <button type="button" (click)="clearFilters()">Clear Filters</button>
+        <button type="submit" class="btn-primary">Search</button>
+        <button type="button" (click)="clearFilters()" class="btn-secondary">Clear</button>
       </div>
     </form>
   </aside>
@@ -29,15 +28,18 @@
       <h3>Search Results</h3>
       <div class="movies-grid">
         <div class="movie-card" *ngFor="let movie of searchedMovies">
-          <h4>{{ movie.title }}</h4>
-          <p><strong>Theatre:</strong> {{ movie.theatre.name }} ({{ movie.theatre.location }})</p>
-          <p><strong>Date:</strong> {{ movie.showDate | date:'dd-MM-yyyy' }}</p>
+          <div class="movie-card-header">
+            <h4>{{ movie.title }}</h4>
+            <span class="badge">{{ movie.theatre.name }}</span>
+          </div>
+          <p><strong>Location:</strong> {{ movie.theatre.location }}</p>
+          <p><strong>Date:</strong> {{ movie.showDate | date:'dd MMM yyyy' }}</p>
           <p><strong>Time:</strong> {{ movie.showTime }}</p>
-          <p><strong>Seats available:</strong> {{ movie.bookings }}</p>
-          <ul>
+          <p><strong>Seats:</strong> {{ movie.bookings }} available</p>
+          <ul class="seat-categories">
             <li *ngFor="let seat of movie.seatCategories">{{ seat }}</li>
           </ul>
-          <button (click)="bookMovie(movie)">Book</button>
+          <button class="btn-primary" (click)="bookMovie(movie)">Book Now</button>
         </div>
       </div>
     </section>
@@ -45,19 +47,24 @@
     <!-- Recommended Movies -->
     <section *ngIf="searchedMovies.length === 0" class="movies-section">
       <h3>Recommended Movies</h3>
-      <div *ngIf="loadingRecommended">Loading recommended...</div>
-      <div *ngIf="!loadingRecommended && recommendedMovies.length === 0">No recommendations available.</div>
+      <div *ngIf="loadingRecommended" class="status-msg">Loading recommended...</div>
+      <div *ngIf="!loadingRecommended && recommendedMovies.length === 0" class="status-msg">
+        No recommendations available.
+      </div>
 
       <div class="movies-grid" *ngIf="recommendedMovies.length > 0">
         <div class="movie-card" *ngFor="let movie of recommendedMovies">
-          <h4>{{ movie.title }}</h4>
-          <p><strong>Theatre:</strong> {{ movie.theatre.name }} ({{ movie.theatre.location }})</p>
-          <p><strong>Date:</strong> {{ movie.showDate | date:'dd-MM-yyyy' }}</p>
+          <div class="movie-card-header">
+            <h4>{{ movie.title }}</h4>
+            <span class="badge">{{ movie.theatre.name }}</span>
+          </div>
+          <p><strong>Location:</strong> {{ movie.theatre.location }}</p>
+          <p><strong>Date:</strong> {{ movie.showDate | date:'dd MMM yyyy' }}</p>
           <p><strong>Time:</strong> {{ movie.showTime }}</p>
-          <ul>
+          <ul class="seat-categories">
             <li *ngFor="let seat of movie.seatCategories">{{ seat }}</li>
           </ul>
-          <button (click)="bookMovie(movie)">Book</button>
+          <button class="btn-primary" (click)="bookMovie(movie)">Book Now</button>
         </div>
       </div>
     </section>

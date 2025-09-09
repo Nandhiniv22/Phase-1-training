@@ -73,7 +73,12 @@ namespace ShowBookingApp.Controllers
             }
         }
 
-
+        [HttpGet("theatre/{theatreId}/bookings")]
+        public async Task<IActionResult> GetBookingsByTheatre(int theatreId)
+        {
+            var bookings = await _bookingRepo.GetBookingsByTheatreAsync(theatreId);
+            return Ok(bookings);
+        }
 
         [HttpGet("my-bookings")]
         public async Task<IActionResult> GetMyBookings()

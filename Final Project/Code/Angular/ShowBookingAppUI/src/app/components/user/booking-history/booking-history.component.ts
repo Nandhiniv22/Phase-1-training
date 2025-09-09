@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from 'src/app/services/auth.service'; // your auth service
+import jsPDF from 'jspdf';
 
 interface Booking {
   bookingId: number;
@@ -63,4 +64,20 @@ export class BookingHistoryComponent implements OnInit {
   formatBookingTime(bookingTime: string | null | undefined): string {
     return bookingTime ? new Date(bookingTime).toLocaleString() : 'N/A';
   }
+
+  downloadBooking(booking: Booking) {
+  const doc = new jsPDF();
+  doc.setFontSize(12);
+
+  doc.text(`Booking ID: ${booking.bookingId}`, 10, 20);
+  doc.text(`Movie: ${booking.movieTitle}`, 10, 30);
+  doc.text(`Theatre: ${booking.theatreName}`, 10, 40);
+  doc.text(`Seats: ${booking.seats.join(', ')}`, 10, 50);
+  doc.text(`Booking Time: ${new Date(booking.bookingTime).toLocaleString()}`, 10, 60);
+  doc.text(`Payment ID: ${booking.paymentId}`, 10, 70);
+  doc.text(`Amount Paid: ₹${booking.amount}`, 10, 80);
+  doc.text(`Payment Status: ${this.getPaymentStatusText(booking.paymentStatus)}`, 10, 90);
+
+  doc.save(`Booking_${booking.bookingId}.pdf`);
+}
 }
